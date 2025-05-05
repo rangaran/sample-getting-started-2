@@ -42,7 +42,7 @@ public class ConfigResource {
 
   public JsonObject sourceJsonBuilder() {
     JsonObjectBuilder sourcesBuilder = Json.createObjectBuilder();
-    for (ConfigSource source : config.getConfigSources()) {
+    for (ConfigSource source: config.getConfigSources()) {
       sourcesBuilder.add(source.getName(), source.getOrdinal());
     }
     return sourcesBuilder.build();
